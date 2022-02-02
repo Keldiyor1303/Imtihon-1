@@ -109,8 +109,6 @@ select.addEventListener("change", function () {
             
                     `
 
-                isSuc()
-
                 todoSection.appendChild(todoBox)
 
             }
@@ -150,8 +148,8 @@ function isSuc() {
 
     todos.forEach(data => {
 
+        const inputs = document.querySelectorAll("#input")
         if (data.isSucBtn == "true") {
-            const inputs = document.querySelectorAll("#input")
 
             for (let input of inputs) {
                 const { inputId } = input.dataset
