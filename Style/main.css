@@ -171,6 +171,10 @@ main h1 {
   background-color: green;
 }
 
+.todoSection .todoBox .succesInput {
+  background-color: #F9D1D1;
+}
+
 .todoSection .todoBox .wrongBtn {
   background-color: red;
 }
