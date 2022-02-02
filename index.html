@@ -9,9 +9,9 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="./Style/main.css">
 
-    <!-- SCRIPT -->
-    <script src="./Js/script.js" defer></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Todo</title>
 </head>
@@ -22,7 +22,7 @@
         <h1>TODO LIST</h1>
 
         <section class="inputSection">
-            <input type="text" placeholder="Eslatma kiriting!">
+            <input type="text" placeholder="Eslatma kiriting!" id="todoInput">
             <select>
                 <option>Barchasi</option>
                 <option>Bajarilganlar</option>
@@ -32,9 +32,24 @@
 
         <section class="todoSection">
 
+            <!--SHABLON 
+                
+                <div class="todoBox">
+                <input type="text" disabled value="1223">
+                <span class="sucBtn">
+                    <i class="fas fa-check" id="success"></i>
+                </span>
+                <span class="wrongBtn">
+                    <i class="fas fa-times" id="wrong"></i>
+                </span>
+            </div> -->
+
         </section>
     </main>
 
+
+    <!-- SCRIPT -->
+    <script src="./Js/script.js" defer></script>
 </body>
 
 </html>

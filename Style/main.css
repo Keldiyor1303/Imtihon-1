@@ -7,18 +7,22 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: 'Work Sans', sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(112.58deg, #FF1E1E 0.37%, #9FCE18 98.57%);
+  background-position: center;
+  background-size: cover;
 }
 
 main {
   width: 100%;
   height: 100%;
-  margin: 50px 0;
+  padding-top: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,5 +84,105 @@ main h1 {
   width: 200px;
   height: 50px;
   padding-left: 10px;
+}
+
+.todoSection {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 600px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.todoSection::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.todoSection::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.todoSection::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.todoSection .todoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.todoSection .todoBox input {
+  width: 400px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.todoSection .todoBox input::-webkit-input-placeholder {
+  color: rgba(255, 30, 30, 0.5);
+}
+
+.todoSection .todoBox input:-ms-input-placeholder {
+  color: rgba(255, 30, 30, 0.5);
+}
+
+.todoSection .todoBox input::-ms-input-placeholder {
+  color: rgba(255, 30, 30, 0.5);
+}
+
+.todoSection .todoBox input::placeholder {
+  color: rgba(255, 30, 30, 0.5);
+}
+
+.todoSection .todoBox span {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.todoSection .todoBox span:active {
+  opacity: 0.6;
+}
+
+.todoSection .todoBox .sucBtn {
+  background-color: green;
+}
+
+.todoSection .todoBox .wrongBtn {
+  background-color: red;
+}
+
+.todoSection .todoBox i {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
